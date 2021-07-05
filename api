@@ -1,0 +1,96 @@
+mkdir api
+cd api
+npm init -y
+npm install json-server ngrok
+create db.json
+
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "jakir",
+      "title": "bangla",
+      "roll": []
+    },
+    {
+      "id": 2,
+      "name": "saddam hossen",
+      "title": "english"
+    },
+    {
+      "id": 3,
+      "name": "manik",
+      "title": "mathe"
+    },
+    {
+      "id": 4,
+      "name": "rubel",
+      "title": "chemistry"
+    },
+    {
+      "id": 5,
+      "name": "badsha",
+      "title": "physics"
+    },
+    {
+      "name": "Useless Textvc do bb",
+      "title": "45555556",
+      "id": 6
+    },
+    {
+      "name": "Forid",
+      "title": "566889",
+      "id": 7
+    },
+    {
+      "name": "Forid",
+      "title": "566889",
+      "id": 8
+    },
+    {
+      "name": "Forid hossen",
+      "title": "5668895669",
+      "id": 9
+    },
+    {
+      "name": "Forid",
+      "title": "566889",
+      "id": 10
+    },
+    {
+      "name": "Forid",
+      "title": "566889",
+      "id": 11
+    },
+    {
+      "name": "Forid",
+      "title": "566889",
+      "id": 12
+    },
+    {
+      "name": "Useless Text",
+      "title": "455",
+      "id": 13
+    },
+    {
+      "name": "Useless Text",
+      "title": "455",
+      "id": 14
+    },
+    {
+      "name": "Useless Text",
+      "title": "455",
+      "id": 15
+    }
+  ]
+}
+
+
+change package.json
+"scripts": {
+    "db": "json-server -w db.json",
+    "ngrk": "ngrok http 3000"
+  }
+
+npm run db
+npm run ngrk
